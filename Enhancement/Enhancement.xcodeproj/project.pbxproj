@@ -20,6 +20,7 @@
 		5FE7C55A2135ABA900AF9AC1 /* UIKit-Enhance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE7C5592135ABA900AF9AC1 /* UIKit-Enhance.swift */; };
 		5FE7C55C2136F84700AF9AC1 /* Timer-TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE7C55B2136F84700AF9AC1 /* Timer-TaskManager.swift */; };
 		5FE7C55E21376F5800AF9AC1 /* TimerManagerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE7C55D21376F5800AF9AC1 /* TimerManagerDemo.swift */; };
+		5FE7C5602137737600AF9AC1 /* Codable-DefaultValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE7C55F2137737600AF9AC1 /* Codable-DefaultValue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		5FE7C5592135ABA900AF9AC1 /* UIKit-Enhance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit-Enhance.swift"; sourceTree = "<group>"; };
 		5FE7C55B2136F84700AF9AC1 /* Timer-TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timer-TaskManager.swift"; sourceTree = "<group>"; };
 		5FE7C55D21376F5800AF9AC1 /* TimerManagerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManagerDemo.swift; sourceTree = "<group>"; };
+		5FE7C55F2137737600AF9AC1 /* Codable-DefaultValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable-DefaultValue.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				5FE7C52B2135A55A00AF9AC1 /* Enhancement.h */,
 				5FE7C5332135A59400AF9AC1 /* Notification-Observer.swift */,
 				5FE7C55B2136F84700AF9AC1 /* Timer-TaskManager.swift */,
+				5FE7C55F2137737600AF9AC1 /* Codable-DefaultValue.swift */,
 				5FE7C5592135ABA900AF9AC1 /* UIKit-Enhance.swift */,
 				5FE7C52C2135A55A00AF9AC1 /* Info.plist */,
 			);
@@ -252,6 +255,7 @@
 			files = (
 				5FE7C5342135A59400AF9AC1 /* Notification-Observer.swift in Sources */,
 				5FE7C55C2136F84700AF9AC1 /* Timer-TaskManager.swift in Sources */,
+				5FE7C5602137737600AF9AC1 /* Codable-DefaultValue.swift in Sources */,
 				5FE7C55A2135ABA900AF9AC1 /* UIKit-Enhance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

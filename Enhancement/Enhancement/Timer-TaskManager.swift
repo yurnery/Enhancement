@@ -14,7 +14,7 @@ public class TimerManager {
     private weak var  target: AnyObject?
     private let selector: Selector
     private var timer: Timer?
-    private var result: Unmanaged<AnyObject>? = nil
+//    private var result: Unmanaged<AnyObject>?
     
     public init(timeInterval: TimeInterval, target: AnyObject, selector: Selector, userInfo: Any? = nil, repeats: Bool = true) {
         self.target = target
@@ -23,7 +23,8 @@ public class TimerManager {
     }
     
     @objc private func task() {
-        target?.perform(selector)
+        _ = target?.perform(selector)
+       
     }
     
     public func stop() {
