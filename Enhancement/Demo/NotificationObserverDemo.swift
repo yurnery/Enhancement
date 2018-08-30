@@ -7,9 +7,8 @@
 //
 
 import UIKit
-import Enhancement
 
-class Notification_ObserverDemo: UIViewController {
+class NotificationObserverDemo: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         config(backgroundColor: .white, title: "Notification")
@@ -34,7 +33,7 @@ class Notification_ObserverDemo: UIViewController {
 
 class A: UIViewController {
     var observer: Any?
-    var observer1: NotificationObserverManager?
+    var observer1: Any?
     override func viewDidLoad() {
         super.viewDidLoad()
         config(backgroundColor: .red, title: "CLASS A")
@@ -50,14 +49,16 @@ class A: UIViewController {
         }
     }
     
-    deinit {
-        print("class A deinit 😆😆😆😆")
-    }
-    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let vc = B()
         navigationController?.pushViewController(vc, animated: true)
     }
+    
+    deinit {
+        print("class A deinit 😆😆😆😆")
+    }
+    
+    
 }
 
 class B: UIViewController {

@@ -16,8 +16,10 @@
 		5FE7C5462135A90D00AF9AC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FE7C5442135A90D00AF9AC1 /* LaunchScreen.storyboard */; };
 		5FE7C5522135A9B700AF9AC1 /* Enhancement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FE7C5282135A55A00AF9AC1 /* Enhancement.framework */; };
 		5FE7C5532135A9B700AF9AC1 /* Enhancement.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5FE7C5282135A55A00AF9AC1 /* Enhancement.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5FE7C5582135AA2300AF9AC1 /* Notification-ObserverDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE7C5572135AA2300AF9AC1 /* Notification-ObserverDemo.swift */; };
-		5FE7C55A2135ABA900AF9AC1 /* SystemEnhance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE7C5592135ABA900AF9AC1 /* SystemEnhance.swift */; };
+		5FE7C5582135AA2300AF9AC1 /* NotificationObserverDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE7C5572135AA2300AF9AC1 /* NotificationObserverDemo.swift */; };
+		5FE7C55A2135ABA900AF9AC1 /* UIKit-Enhance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE7C5592135ABA900AF9AC1 /* UIKit-Enhance.swift */; };
+		5FE7C55C2136F84700AF9AC1 /* Timer-TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE7C55B2136F84700AF9AC1 /* Timer-TaskManager.swift */; };
+		5FE7C55E21376F5800AF9AC1 /* TimerManagerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE7C55D21376F5800AF9AC1 /* TimerManagerDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +58,10 @@
 		5FE7C5422135A90D00AF9AC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FE7C5452135A90D00AF9AC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5FE7C5472135A90D00AF9AC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5FE7C5572135AA2300AF9AC1 /* Notification-ObserverDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification-ObserverDemo.swift"; sourceTree = "<group>"; };
-		5FE7C5592135ABA900AF9AC1 /* SystemEnhance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemEnhance.swift; sourceTree = "<group>"; };
+		5FE7C5572135AA2300AF9AC1 /* NotificationObserverDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationObserverDemo.swift; sourceTree = "<group>"; };
+		5FE7C5592135ABA900AF9AC1 /* UIKit-Enhance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit-Enhance.swift"; sourceTree = "<group>"; };
+		5FE7C55B2136F84700AF9AC1 /* Timer-TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timer-TaskManager.swift"; sourceTree = "<group>"; };
+		5FE7C55D21376F5800AF9AC1 /* TimerManagerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManagerDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +107,8 @@
 			children = (
 				5FE7C52B2135A55A00AF9AC1 /* Enhancement.h */,
 				5FE7C5332135A59400AF9AC1 /* Notification-Observer.swift */,
-				5FE7C5592135ABA900AF9AC1 /* SystemEnhance.swift */,
+				5FE7C55B2136F84700AF9AC1 /* Timer-TaskManager.swift */,
+				5FE7C5592135ABA900AF9AC1 /* UIKit-Enhance.swift */,
 				5FE7C52C2135A55A00AF9AC1 /* Info.plist */,
 			);
 			path = Enhancement;
@@ -114,7 +119,8 @@
 			children = (
 				5FE7C53B2135A90B00AF9AC1 /* AppDelegate.swift */,
 				5FE7C53D2135A90B00AF9AC1 /* ViewController.swift */,
-				5FE7C5572135AA2300AF9AC1 /* Notification-ObserverDemo.swift */,
+				5FE7C5572135AA2300AF9AC1 /* NotificationObserverDemo.swift */,
+				5FE7C55D21376F5800AF9AC1 /* TimerManagerDemo.swift */,
 				5FE7C53F2135A90B00AF9AC1 /* Main.storyboard */,
 				5FE7C5422135A90D00AF9AC1 /* Assets.xcassets */,
 				5FE7C5442135A90D00AF9AC1 /* LaunchScreen.storyboard */,
@@ -245,7 +251,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FE7C5342135A59400AF9AC1 /* Notification-Observer.swift in Sources */,
-				5FE7C55A2135ABA900AF9AC1 /* SystemEnhance.swift in Sources */,
+				5FE7C55C2136F84700AF9AC1 /* Timer-TaskManager.swift in Sources */,
+				5FE7C55A2135ABA900AF9AC1 /* UIKit-Enhance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,7 +261,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FE7C53E2135A90B00AF9AC1 /* ViewController.swift in Sources */,
-				5FE7C5582135AA2300AF9AC1 /* Notification-ObserverDemo.swift in Sources */,
+				5FE7C5582135AA2300AF9AC1 /* NotificationObserverDemo.swift in Sources */,
+				5FE7C55E21376F5800AF9AC1 /* TimerManagerDemo.swift in Sources */,
 				5FE7C53C2135A90B00AF9AC1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

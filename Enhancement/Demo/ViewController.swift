@@ -9,18 +9,17 @@
 import UIKit
 import Enhancement
 
-
 class ViewController: UIViewController {
     private var enhancements: [String] = []
     
     private lazy var tableView: UITableView = {
-       let table  = UITableView(frame: UIScreen.main.bounds)
+        let table  = UITableView(frame: UIScreen.main.bounds)
         table.dataSource = self
         table.delegate = self
         table.register(UITableViewCell.self, forCellReuseIdentifier: UITableViewCell.identifier)
         return table
     }()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         generateDate()
@@ -29,10 +28,8 @@ class ViewController: UIViewController {
     }
     
     private func generateDate() {
-        enhancements = ["notification-observer"]
+        enhancements = ["notification-observer", "timer"]
     }
-
-
 }
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
@@ -49,7 +46,10 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0:
-            let vc = Notification_ObserverDemo()
+            let vc = NotificationObserverDemo()
+            navigationController?.pushViewController(vc, animated: true)
+        case 1:
+            let vc = TimerDemo()
             navigationController?.pushViewController(vc, animated: true)
         default:
             break

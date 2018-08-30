@@ -13,3 +13,9 @@ public extension UITableViewCell {
         return "\(self)"
     }
 }
+
+public extension UICollectionViewCell {
+    static var identifier: String  {
+        return "\(self)"
+    }
+}
